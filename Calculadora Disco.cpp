@@ -1,6 +1,6 @@
-// Calculadora Disco.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
-
+/* 
+Calcula, en base a un cuadro de datos, el Seek Time, el Search Time y finalmente el Access Time.
+*/
 #include <iostream>
 #include "rlutil.h"
 #include <iomanip>
