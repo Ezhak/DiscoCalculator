@@ -77,7 +77,8 @@ int main(){
 	gotoxy(61, 3);
 	cout << "El disco tarda " << fixed << setprecision(2) << vueltaPorMs << "ms en una vuelta" << endl;
 // Calculo de cuantos sectores recorre el Seek Time
-	sectoresPorSeekTime = ((seekTime * sectoresPorPista) / (vueltaPorMs))+1;
+	sectoresPorSeekTime = ((seekTime * sectoresPorPista) / (vueltaPorMs));
+	sectoresPorSeekTime = (int) ceil(sectoresPorSeekTime);
 	secAux = sectoresPorSeekTime;secAux *= 10;ceil(secAux);secAux /= 10;
 	sectoresPorSeekTime=secAux;
 	gotoxy(61, 4);
